@@ -1,13 +1,13 @@
-export default function Score(props) {
-    const scores = props.data
-    return scores.map((s, index) => {
+export default function Score({score,date}) {
+   
         return (
+           
             <>
-                <h2>Date: {s.date}</h2>
+                <h2>Date: {date}</h2>
                 <h2>
-                    Score: {s.score}
+                    Score: {score}
                 </h2>
             </>
         )
-    })
+    
 }
